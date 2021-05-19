@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+  color: rgb(128, 128, 128);
+}
+#header h1 {
+  font-weight: 400;
+}
+#header h2 {
+  font-weight: 600;
+}
+#aboutme {
+  width: 50%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+#portfolio {
+  margin-top: 100px;
+}
+figure {
+  margin: 30px 10px;
+}
+figcaption {
+  margin-left: 15px;
+}
+img {
+  width: 40vw;
+  object-fit: contain;
+}
+.row {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+}
+.row p {
+  width: 40vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
+footer {
+  text-align: center;
+}
+footer p {
+  font-style: italic;
+}
+footer p span {
+  font-weight: bold;
+  font-style: normal;
+}
