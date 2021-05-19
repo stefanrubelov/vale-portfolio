@@ -21,9 +21,11 @@ body {
 }
 #header h2 {
   font-weight: 600;
+  font-size: 2rem;
 }
 #header h3 {
-  margin: 0;
+  margin-bottom: 0;
+  font-weight: normal;
 }
 #aboutme {
   width: 50%;
@@ -34,13 +36,14 @@ body {
   margin-top: 100px;
 }
 figure {
-  margin: 30px 10px;
+  margin: 40px 10px;
 }
 .figure-flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  margin-left: 120px;
 }
 .heading {
   font-size: 2.5rem;
@@ -50,7 +53,7 @@ figcaption {
 }
 .image {
   max-width: 75vw;
-  max-height: 85vh;
+  max-height: 65vh;
 }
 .row {
   display: flex;
@@ -58,14 +61,21 @@ figcaption {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0;
 }
 .row > figure img {
   height: 27vh;
+}
+.row > figure > figcaption {
+  font-size: 1.5rem;
 }
 .row p {
   width: 90%;
   text-align: center;
   margin: auto;
+}
+img {
+  margin: 25px 0;
 }
 footer {
   text-align: center;
