@@ -7,9 +7,11 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
+  background-color: #f2f2f3;
+  color: #616563;
 }
 nav {
-  background-color: rgb(136, 136, 136);
+  background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
   position: fixed;
@@ -30,55 +32,70 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #000;
   font-size: 1.3rem;
+  color: black;
 }
 #header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 9.5vh 0 0 0;
-  color: rgb(128, 128, 128);
+  background-image: url("../images/logo.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-#header h1 {
-  font-weight: 400;
-}
+
 #header h2 {
-  font-weight: 600;
-  font-size: 2rem;
-}
-#header h3 {
-  margin-bottom: 0;
-  font-weight: normal;
+  font-size: 1.7rem;
+  font-weight: 400;
+  position: absolute;
+  top: 52vh;
+  left: 55vw;
 }
 #aboutme {
-  width: 50%;
-  text-align: justify;
-  text-justify: inter-word;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutme img {
+  height: 65%;
+}
+#aboutmetext {
+  width: 35%;
+  margin-left: 50px;
 }
 #portfolio {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 figure {
   margin: 40px 10px;
 }
 .figure-flex-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-left: 120px;
 }
 .heading {
   font-size: 2.5rem;
+}
+.subheading {
+  font-size: 1.75rem;
 }
 figcaption {
   margin: 0 20px;
 }
 .image {
   max-width: 75vw;
-  max-height: 65vh;
+  max-height: 70vh;
 }
 .row {
   display: flex;
@@ -104,11 +121,31 @@ img {
 }
 footer {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-footer p {
-  font-style: italic;
+footer i {
+  margin: 15px;
+  color: #4b4b4b;
 }
-footer p span {
-  font-weight: bold;
-  font-style: normal;
+.fa-linkedin-in {
+  color: white;
+  background-color: #4b4b4b;
+  padding: 8px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  border-radius: 50%;
+}
+.fa-google-plus {
+  background-color: white;
+  border-radius: 50%;
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
 }
